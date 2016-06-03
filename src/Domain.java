@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 
 public class Domain extends DefaultTreeNode {
-	protected ArrayList<SimpleTreeNode> firstlvl = new ArrayList<SimpleTreeNode>();
-	protected ArrayList<SimpleTreeNode> secondlvl = new ArrayList<SimpleTreeNode>();
-	protected ArrayList<SimpleTreeNode> thirdlvl = new ArrayList<SimpleTreeNode>();
-	protected ArrayList<SimpleTreeNode> fourthlvl = new ArrayList<SimpleTreeNode>();;
+	private ArrayList<SimpleTreeNode> firstlvl = new ArrayList<SimpleTreeNode>();
+	private ArrayList<SimpleTreeNode> secondlvl = new ArrayList<SimpleTreeNode>();
+	private ArrayList<SimpleTreeNode> thirdlvl = new ArrayList<SimpleTreeNode>();
+	private ArrayList<SimpleTreeNode> fourthlvl = new ArrayList<SimpleTreeNode>();;
 	
 	public Domain (String Name, int id, ArrayList<SimpleTreeNode> sons){
 	super (Name, id, 0);
