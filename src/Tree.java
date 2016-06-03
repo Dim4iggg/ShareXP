@@ -14,8 +14,9 @@ public Tree (int id, String N, Domain d, ArrayList Werts){  //id = user; N =type
 	this.Setwerts(Werts);
 }
 public void Setwerts(ArrayList Werts){
-	for (int i = 0; i<=this.domain.fourthlvl.size();i++){
-		this.domain.fourthlvl.get(i).SetWert((int) Werts.get(i)); //позиции должны обязательно совпадать
+	for (int i = 0; i<this.domain.fourthlvl.size();i++){
+		if (i<Werts.size())this.domain.fourthlvl.get(i).SetWert((int) Werts.get(i)); //позиции должны обязательно совпадать
+		else this.domain.fourthlvl.get(i).SetWert(0);
 	}
 }
 public int getWert(int idlvl, int id){

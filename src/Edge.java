@@ -34,4 +34,6 @@ public class Edge implements Serializable {
 	public  double getSim(){
 		return this.sim;
 	}
+
+
 }

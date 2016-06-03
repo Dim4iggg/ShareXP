@@ -36,6 +36,10 @@ public ArrayList<Edge> getRel(){
 }
 public void addRel(User B){
 	Edge e = new Edge(this,B);
-	if ( e.getSim()>0.5) this.relatives.add(e);
+	Edge e2 = new Edge(B,this);
+	if ( e.getSim()>0.5){ 
+		this.relatives.add(e);
+		B.relatives.add(e2);
+	}
 }
 }
