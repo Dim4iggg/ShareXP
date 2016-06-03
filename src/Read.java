@@ -34,6 +34,7 @@ public class Read {
 		 for (Edge e :u1.getRel()) System.out.println(e.A.id+"-->"+e.B.id+": "+e.sim);
 		 for (Edge e :u2.getRel()) System.out.println(e.A.id+"-->"+e.B.id+": "+e.sim);
 		 for (Edge e :u3.getRel()) System.out.println(e.A.id+"-->"+e.B.id+": "+e.sim);
+		 System.out.println("Ff");
 		
 
 		 
